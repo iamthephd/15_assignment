@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #E3F2FD; /* Light blue background */
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/diagonal-stripes.png'); /* Subtle pattern */
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    align-items: center; /* Vertically align webcam and predictions */
+}
+
+#webcam-container {
+    position: relative;
+    border: 5px solid #aaa; /* Gray border around the webcam */
+    padding: 5px;
+    margin: 10px;
+    text-align: center; /* Center text inside the webcam container */
+}
+
+#webcam {
+    background-color: #000; /* In case the webcam feed is not available */
+    width: 640px;
+    height: 480px;
+}
+
+#fps {
+    position: absolute;
+    bottom: 10px;
+    width: 100%; /* Make the FPS label full width of the container */
+    left: 0;
+    color: #fff; /* Color of the FPS text for better visibility */
+}
+
+#predictions {
+    margin-left: 20px;
+}
+
+#predictionList {
+    list-style: none;
+    padding: 0;
+}
+
+#predictionList li {
+    margin-bottom: 5px;
+    font-size: 16px; /* Normal font size */
+}
+
+#predictionList .highlight {
+    font-size: 24px; /* Larger and bold for the predicted class */
+    font-weight: bold;
+    color: #ff4500; /* Bold color */
+}
+
+h1 {
+    margin-top: 0;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
