@@ -80,6 +80,11 @@ print(f"The test accuracy is {round(accuracy*100, 2)}%")
 import os
 import shutil
 
+dir_path = "saved_model"
+if not os.path.exists(dir_path):
+    # If the directory does not exist, create it
+    os.makedirs(dir_path)
+
 # removing the previously stored models
 tf_model_path = "saved_model/tf_model.h5"
 if os.path.exists(tf_model_path):
