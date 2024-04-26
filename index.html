@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Live Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="content">
+            <div id="webcam-container">
+                <h1>Facial Expression Classification</h1>
+                <video id="webcam" autoplay playsinline width="640" height="480"></video>
+                <div id="fps">FPS: <span id="fpsValue">0</span></div>
+            </div>
+            <div id="predictions">
+                <h2>Predicted Emotion</h2>
+                <ul id="predictionList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="app.js"></script>
+</body>
+
